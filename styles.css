@@ -47,8 +47,47 @@ body {
     text-align: center;
   }
 
-  #counter {
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
+
+  .image-grid img:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+  
+  .image-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-gap: 10px; /* 10px gap between images */
+  }
+  
+  .image-card {
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .image-card img {
+    width: 100%; /* images take up the full width of the grid cell */
+    height: auto;
+  }
+  
+  .image-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .image-caption h3 {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .image-caption p {
+    margin: 10px 0 0;
+    padding: 0;
   }
